@@ -20,7 +20,7 @@
 
 @font-face {
     font-family: pnova-regular;
-    src: url(../fonts/timeburner_regular.ttf);
+    src: url(../fonts/FontsFree-Net-proxima_nova_reg-webfont.ttf);
 }
 
 @font-face {
@@ -79,7 +79,7 @@ body {
 .logo-container {
     display: flex;
     height: 2.9rem;
-    padding-left: 2rem;
+    padding-left: 4rem;
 }
 
 .logo-container img {
@@ -99,12 +99,12 @@ body {
     border: none;
     color: #7F38DE;
     font-size: 1.5rem;
-    padding: 0 2rem .5rem;
+    margin: 0 4rem .5rem;
 }
 
 .navbar-nav {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-color: #7F38DE;
     font-family: time_burner_bold;
     font-size: 1.2rem;
@@ -148,21 +148,22 @@ body {
 .index-container {
     display: grid;
     grid-template:
-        "header"3.1rem "anuncio"10rem "marketing"65rem "info"40rem "footer"auto
+        "header"3.1rem  "imagen" 10rem "marketing"65rem "info"40rem "footer"auto
 }
 
 .anuncio-container {
-    grid-area: anuncio;
-    background-image: url(../multimedia/images/index/baner/anuncio.png);
+    grid-area: imagen;
+    background-color: #7F38DE;
     box-shadow: 0 1px 5px rgba(0, 0, 0, .9);
+    
 }
 
 .anuncio h1{
-    color: rgb(255, 255, 255);
-    font-family: cp-heavy;
-    font-size: 2rem;
-    margin-top: 4rem;
+    color: #e8d9fa;
+    font-family: time_burner_bold;
+    font-size: 1.5rem;
     text-align: center;
+    padding-top: 12%;
 }
 
 /*Marketing*/
@@ -182,14 +183,12 @@ body {
 }
 
 .item-marketing p {
-    margin: 0 2rem;
+    padding: 0 2rem;
 }
 
 .button {
     color: #e8d9fa;
     background-color: #7F38DE;
-    margin-top: 1rem;
-
 }
 
 /*Info area*/
@@ -203,11 +202,95 @@ body {
 
 .info-item i{
     font-size: 3rem;
-    margin: 3rem 0;
+    padding: 3rem 0;
 }
 
 .info-item p {
     font-family: time_burner_bold;
     font-size: 1.2rem;
+}
+
+/*Productos Banner*/
+
+.productos-container {
+    display: grid;
+    grid-template:
+        "header"3.1rem "image" 10rem "texto" 12rem "main" auto "footer"auto;
+}
+
+.banner-image{
+    grid-area: image;
+}
+
+.banner-image img {
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.banner-texto {
+    grid-area: texto;
+}
+
+.banner-texto {
+    width: 100%;
+    background-color: #7F38DE;
+    margin: 0 0 1rem 0;
+}
+
+.banner-texto h1 {
+    color: #e8d9fa;
+    font-family: pnova-regular;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .5rem 0 0 0;
+}
+
+.banner-texto p {
+    color: #e8d9fa;
+    font-family: pnova-regular;
+    font-size: .9rem;
+    text-align: center;
+    padding: 0 4rem;
+}
+
+/* Productos Main */
+
+.productos-main {
+    grid-area: main;
+}
+
+/* Productos amuletos */
+
+.productos-txt h2 {
+    color: #000;
+    font-family: pnova-sb;
+    font-size: 2rem;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.productos-txt p {
+    color: #000;
+    font-family: pnova-regular;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 0 4rem;
+}
+
+.img-top img {
+    width: 100%;
+    padding: 1rem 8rem;
+}
+
+.img-pie {
+    display:flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.img-pie img {
+    width: 30%;
+    padding: 1rem 0 4rem 0;
+    
 }
 
