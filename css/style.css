@@ -1,0 +1,213 @@
+@font-face {
+    font-family: cp-heavy;
+    src: url(../fonts/CooperHewitt-Heavy.otf);
+}
+
+@font-face {
+    font-family: time_burner_bold;
+    src: url(../fonts/timeburnerbold.ttf);
+}
+
+@font-face {
+    font-family: time_burner_nav;
+    src: url(../fonts/timeburner_regular.ttf);
+}
+
+@font-face {
+    font-family: pnova-sb;
+    src: url(../fonts/FontsFree-Net-Proxima-Nova-Bold.otf);
+}
+
+@font-face {
+    font-family: pnova-regular;
+    src: url(../fonts/timeburner_regular.ttf);
+}
+
+@font-face {
+    font-family: nova-bold;
+    src: url(../fonts/FontsFree-Net-Proxima-Nova-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: rgb(232, 217, 250);
+    background: linear-gradient(180deg, rgb(240, 231, 252) 60%, rgba(181, 184, 254, 1) 100%);
+    background-attachment: fixed;
+}
+
+
+/* Header */
+
+#header {
+    grid-area: header;
+    background-color: rgba(232, 217, 250);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .9);
+    width: 100%;
+    height: 3.1rem;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 3.5rem;
+    padding: 4px 0;
+}
+
+.container-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 2px 0 0 2px;
+}
+
+.logo-container {
+    display: flex;
+    height: 2.9rem;
+    padding-left: 2rem;
+}
+
+.logo-container img {
+    width: 90%;
+    top: 0;
+    display: block;
+}
+
+.logo-container p {
+    color: #432F61;
+    font-family: time_burner_bold;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.navbar-toggler {
+    border: none;
+    color: #7F38DE;
+    font-size: 1.5rem;
+    padding: 0 2rem .5rem;
+}
+
+.navbar-nav {
+    width: 100%;
+    height: 100vh;
+    background-color: #7F38DE;
+    font-family: time_burner_bold;
+    font-size: 1.2rem;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.nav-item a {
+    color: #e8d9fa;
+    margin-top: 3rem;
+    transition: all .1s ease-in;
+}
+
+.nav-item ul {
+    height: 80%;
+}
+
+.nav-link:hover {
+    font-size: 1.3rem;
+    color: #432F61;
+}
+
+/*Footer*/
+
+#footer {
+    grid-area: footer;
+    border-top: 1px solid gray;
+}
+
+.footer-icons {
+    display: inline-block;
+    margin-right: 25rem;
+}
+
+.footer-icons a {
+    color: rgb(65, 65, 65);
+}
+
+/* Baner */
+
+.index-container {
+    display: grid;
+    grid-template:
+        "header"3.1rem "anuncio"10rem "marketing"65rem "info"40rem "footer"auto
+}
+
+.anuncio-container {
+    grid-area: anuncio;
+    background-image: url(../multimedia/images/index/baner/anuncio.png);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .9);
+}
+
+.anuncio h1{
+    color: rgb(255, 255, 255);
+    font-family: cp-heavy;
+    font-size: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+/*Marketing*/
+
+.container-marketing {
+    grid-area: marketing;
+}
+
+.item-marketing {
+    text-align: center;
+    margin: 4rem 0 0 0;
+}
+
+.item-marketing h2 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.item-marketing p {
+    margin: 0 2rem;
+}
+
+.button {
+    color: #e8d9fa;
+    background-color: #7F38DE;
+    margin-top: 1rem;
+
+}
+
+/*Info area*/
+
+.index-info {
+    grid-area: info;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-top: 1px solid gray;
+}    
+
+.info-item i{
+    font-size: 3rem;
+    margin: 3rem 0;
+}
+
+.info-item p {
+    font-family: time_burner_bold;
+    font-size: 1.2rem;
+}
+
