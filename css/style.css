@@ -65,24 +65,6 @@ a {
     z-index: 1;
 }
 
-.nav-bar {
-    width: 100%;
-    height: 3.5rem;
-    padding: 4px 0;
-}
-
-.container-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar-brand {
-    margin: 0;
-    padding: 2px 0 0 2px;
-}
-
 .logo-container {
     display: flex;
     height: 2.9rem;
@@ -100,6 +82,24 @@ a {
     font-family: time_burner_bold;
     font-size: .8rem;
     text-align: center;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 3.5rem;
+    padding: 4px 0;
+}
+
+.container-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 2px 0 0 2px;
 }
 
 .navbar-toggler {
@@ -131,7 +131,7 @@ a {
 
 .nav-link:hover {
     font-size: 1.3rem;
-    color: #7F38DE;
+    color: #000;
 }
 
 /*Footer*/
@@ -150,29 +150,54 @@ a {
     color: rgb(65, 65, 65);
 }
 
-/* Baner */
+/* Index */
 
 .index-container {
     display: grid;
     grid-template:
-        "header"3.1rem  "imagen" 10rem "marketing"65rem "info"40rem "footer"auto
+        "header"3.5rem "carrusel"40rem "marketing" 25rem "info" 40rem "footer"auto;   
 }
+
+/*Carrusel*/
 
 .anuncio-container {
-    display: flex;
-    justify-content: center;
-    grid-area: imagen;
-    background-color: #7F38DE;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, .9);
-    
+    display: none;
 }
 
-.anuncio h1{
-    color: #e8d9fa;
-    font-family: time_burner_bold;
-    font-size: 1.5rem;
+.carousel {
+    grid-area: carrusel;
+    display: block;
+}
+    
+.carousel-item img {
+    filter: sepia(50%);
+    width: 100%;
+}
+    
+.carousel-inner {
+    position: relative;
+}
+    
+.carousel-caption {
+    padding-bottom: 2rem;
+}
+
+.btn-car {
+    background-color: #7F38DE;
+}
+
+.carousel-caption em {
+    color: rgb(167, 167, 167);
+}
+    
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: rgb(128, 128, 128);
     text-align: center;
-    padding-top: 15%;
+}   
+
+.carousel-control-next-icon {
+    margin-bottom: 2rem;
 }
 
 /*Marketing*/
@@ -219,7 +244,7 @@ a {
     font-size: 1.2rem;
 }
 
-/*Productos Banner*/
+/*Productos*/
 
 .productos-container {
     display: grid;
@@ -249,7 +274,7 @@ a {
 .banner-texto h1 {
     color: #e8d9fa;
     font-family: pnova-regular;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     padding: .5rem 0 0 0;
 }
@@ -257,7 +282,7 @@ a {
 .banner-texto p {
     color: #e8d9fa;
     font-family: pnova-regular;
-    font-size: .9rem;
+    font-size: 1rem;
     text-align: center;
     padding: 0 4rem;
 }
@@ -423,29 +448,13 @@ a {
 
 @media (min-width: 62rem) {
     
-    .index-container {
-        display: grid;
-        grid-template:
-            "header header header"5rem  "carousel carousel carousel"10rem "marketing1 marketing2 marketing3"65rem "info1 info2 info2"40rem "footer footer footer footer"auto
-    }
+
+
+    /*header*/
 
     #header {
         height: 4.5rem;
-    }
-
-    .logo-container {
-        height: 4.5rem;
-        padding: .5rem 10rem;
-    }
-
-    .logo-container img {
-        width: 100%;
-    }
-
-    .logo-container p {
-        font-size: .9rem;
-        text-align: center;
-        padding-left: .2rem;
+        z-index: 2;
     }
 
     .navbar-toggler {
@@ -458,16 +467,37 @@ a {
         height: 4.5rem;
         background-color: transparent;
         overflow-y: hidden;
-        padding: .5rem 6rem;
+        padding: .5rem 6rem 0 6rem;
     }
     
     .nav-item a {
         color: #7F38DE;
         margin: 0 1rem;
-        
     }
 
-    .anuncio-container {
-        display: none;
+    .logo-container {
+        height: 4.5rem;
+        padding: .5rem 0 0 6rem;
+    }
+
+    .logo-container img {
+        width: 100%;
+    }
+
+    .logo-container p {
+        font-size: .9rem;
+        text-align: center;
+        padding-left: .2rem;
+    }
+
+    /*Marketing*/
+    
+    .container-marketing {
+        display: flex;
+    }
+    
+    .item-marketing {
+        width: 100%;
+        height: auto;
     }
 }
