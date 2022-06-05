@@ -294,3 +294,49 @@ body {
     
 }
 
+/* Nosotras */
+
+.nosotras-container {
+    display: grid;
+    grid-template:
+        "header"3.1rem  "nosotras" 50rem "taller" 50rem  "feria1" 50rem  "feria2" 30rem "footer"auto;
+}
+
+.nosotras-main {
+    grid-area: nosotras;
+    margin-top: 1rem;
+}
+
+.nosotras h2 {
+    color: #432F61;
+    font-family: pnova-sb;
+    font-size: 2rem;
+    text-align: center;
+    /* padding: 4rem 0 0 0; */
+
+}
+
+.nosotras p {
+    color: #000;
+    font-family: pnova-regular;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 0 4rem;
+}
+
+.nosotras-img img{
+    width: 100%;
+   padding: 2rem 4rem;
+}
+
+.taller {
+    grid-area: taller;
+}
+
+.feria1 {
+    grid-area: feria1;
+}
+
+.feria2 {
+    grid-area: feria2;
+}
