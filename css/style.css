@@ -45,6 +45,13 @@ body {
     background-attachment: fixed;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
 
 /* Header */
 
@@ -299,7 +306,7 @@ body {
 .nosotras-container {
     display: grid;
     grid-template:
-        "header"3.1rem  "nosotras" 50rem "taller" 50rem  "feria1" 50rem  "feria2" 30rem "footer"auto;
+        "header"3.1rem  "nosotras" 55rem "taller" 55rem  "feria1" 55rem  "feria2" 55rem "footer"auto;
 }
 
 .nosotras-main {
@@ -312,8 +319,6 @@ body {
     font-family: pnova-sb;
     font-size: 2rem;
     text-align: center;
-    /* padding: 4rem 0 0 0; */
-
 }
 
 .nosotras p {
@@ -326,7 +331,7 @@ body {
 
 .nosotras-img img{
     width: 100%;
-   padding: 2rem 4rem;
+    padding: 2rem 4rem;
 }
 
 .taller {
@@ -340,3 +345,5 @@ body {
 .feria2 {
     grid-area: feria2;
 }
+
+/* Galería */
