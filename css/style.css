@@ -131,7 +131,7 @@ a {
 
 .nav-link:hover {
     font-size: 1.3rem;
-    color: #432F61;
+    color: #7F38DE;
 }
 
 /*Footer*/
@@ -159,6 +159,8 @@ a {
 }
 
 .anuncio-container {
+    display: flex;
+    justify-content: center;
     grid-area: imagen;
     background-color: #7F38DE;
     box-shadow: 0 1px 5px rgba(0, 0, 0, .9);
@@ -170,7 +172,7 @@ a {
     font-family: time_burner_bold;
     font-size: 1.5rem;
     text-align: center;
-    padding-top: 12%;
+    padding-top: 15%;
 }
 
 /*Marketing*/
@@ -347,3 +349,125 @@ a {
 }
 
 /* Galería */
+
+.menu-fixed .btn {
+    background-color: #7F38DE;
+}
+
+.anillos {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.aros {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.dijes {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.amuletos {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+.galeria-titulo {
+    margin-top: 5rem;
+}
+
+.card {
+    border: .1px solid rgb(218, 211, 211);
+    transition: all .5s ease-in-out;
+}
+
+.card img {
+    padding: .7rem;
+    border-radius: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.card-body .btn {
+    background-color: #7F38DE;
+}
+
+.card:hover, .menu-fixed .btn:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+} 
+
+/* Contacto */
+
+.contacto-container {
+    display: grid;
+    grid-template: 
+    "header" 3.1rem "contacto" 40rem "footer" auto;
+}
+
+.form-contact {
+    grid-area: contacto;
+    margin-top: 3rem;
+}
+
+.form-contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.send-button .btn{
+    background-color: #7F38DE;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 62rem) {
+    
+    .index-container {
+        display: grid;
+        grid-template:
+            "header header header"5rem  "carousel carousel carousel"10rem "marketing1 marketing2 marketing3"65rem "info1 info2 info2"40rem "footer footer footer footer"auto
+    }
+
+    #header {
+        height: 4.5rem;
+    }
+
+    .logo-container {
+        height: 4.5rem;
+        padding: .5rem 10rem;
+    }
+
+    .logo-container img {
+        width: 100%;
+    }
+
+    .logo-container p {
+        font-size: .9rem;
+        text-align: center;
+        padding-left: .2rem;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: flex-end;
+        height: 4.5rem;
+        background-color: transparent;
+        overflow-y: hidden;
+        padding: .5rem 6rem;
+    }
+    
+    .nav-item a {
+        color: #7F38DE;
+        margin: 0 1rem;
+        
+    }
+
+    .anuncio-container {
+        display: none;
+    }
+}
