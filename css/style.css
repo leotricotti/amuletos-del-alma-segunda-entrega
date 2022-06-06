@@ -1,31 +1,16 @@
 @font-face {
-    font-family: cp-heavy;
-    src: url(../fonts/CooperHewitt-Heavy.otf);
-}
-
-@font-face {
     font-family: time_burner_bold;
     src: url(../fonts/timeburnerbold.ttf);
 }
 
 @font-face {
+    font-family: slthin;
+    src: url(../fonts/SlatePro-Light.ttf);
+}
+
+@font-face {
     font-family: time_burner_nav;
     src: url(../fonts/timeburner_regular.ttf);
-}
-
-@font-face {
-    font-family: pnova-sb;
-    src: url(../fonts/FontsFree-Net-Proxima-Nova-Bold.otf);
-}
-
-@font-face {
-    font-family: pnova-regular;
-    src: url(../fonts/FontsFree-Net-proxima_nova_reg-webfont.ttf);
-}
-
-@font-face {
-    font-family: nova-bold;
-    src: url(../fonts/FontsFree-Net-Proxima-Nova-Bold.otf);
 }
 
 * {
@@ -62,7 +47,7 @@ a {
     width: 100%;
     height: 3.1rem;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo-container {
@@ -116,7 +101,6 @@ a {
     font-family: time_burner_bold;
     font-size: 1.2rem;
     text-align: center;
-    overflow-y: scroll;
 }
 
 .nav-item a {
@@ -155,18 +139,13 @@ a {
 .index-container {
     display: grid;
     grid-template:
-        "header"3.5rem "carrusel"40rem "marketing" 25rem "info" 40rem "footer"auto;   
+        "header"4.5rem "carrusel"12rem "marketing"70rem "info" 50rem "footer"auto;   
 }
 
 /*Carrusel*/
 
-.anuncio-container {
-    display: none;
-}
-
 .carousel {
     grid-area: carrusel;
-    display: block;
 }
     
 .carousel-item img {
@@ -174,14 +153,7 @@ a {
     width: 100%;
 }
     
-.carousel-inner {
-    position: relative;
-}
     
-.carousel-caption {
-    padding-bottom: 2rem;
-}
-
 .btn-car {
     background-color: #7F38DE;
 }
@@ -196,10 +168,6 @@ a {
     text-align: center;
 }   
 
-.carousel-control-next-icon {
-    margin-bottom: 2rem;
-}
-
 /*Marketing*/
 
 .container-marketing {
@@ -208,16 +176,16 @@ a {
 
 .item-marketing {
     text-align: center;
-    margin: 4rem 0 0 0;
+    padding: 2rem 0 0 0;
 }
 
 .item-marketing h2 {
-    margin-top: 1rem;
+    padding-top: 1rem;
     text-align: center;
 }
 
 .item-marketing p {
-    padding: 0 2rem;
+    padding: 0 4rem;
 }
 
 .button {
@@ -232,6 +200,7 @@ a {
     color: rgb(0, 0, 0);
     text-align: center;
     border-top: 1px solid gray;
+    padding-top: 4rem;
 }    
 
 .info-item i{
@@ -249,7 +218,7 @@ a {
 .productos-container {
     display: grid;
     grid-template:
-        "header"3.1rem "image" 10rem "texto" 12rem "main" auto "footer"auto;
+        "header"4.5rem "image" 6rem "texto" 14rem "main" 170rem "footer"auto;
 }
 
 .banner-image{
@@ -263,26 +232,24 @@ a {
 
 .banner-texto {
     grid-area: texto;
+    width: 100%;
+    height: 12rem;
+    background-color: #7F38DE;
 }
 
-.banner-texto {
-    width: 100%;
-    background-color: #7F38DE;
-    margin: 0 0 1rem 0;
-}
 
 .banner-texto h1 {
     color: #e8d9fa;
     font-family: pnova-regular;
     font-size: 2rem;
     text-align: center;
-    padding: .5rem 0 0 0;
+    padding: 2.3rem 0 0 0;
 }
 
 .banner-texto p {
     color: #e8d9fa;
-    font-family: pnova-regular;
-    font-size: 1rem;
+    font-family: slthin;
+    font-size: 1.2rem;
     text-align: center;
     padding: 0 4rem;
 }
@@ -297,22 +264,22 @@ a {
 
 .productos-txt h2 {
     color: #000;
-    font-family: pnova-sb;
+    font-family: slthin;
     font-size: 2rem;
-    padding: 1.5rem 0;
+    padding: 3rem 0 1rem 0;
     text-align: center;
 }
 
 .productos-txt p {
     color: #000;
-    font-family: pnova-regular;
-    font-size: 1.2rem;
+    font-family: slthin;
+    font-size: 1.1rem;
     text-align: justify;
     padding: 0 4rem;
 }
 
 .img-top img {
-    width: 100%;
+    width: 80%;
     padding: 1rem 8rem;
 }
 
@@ -324,8 +291,7 @@ a {
 
 .img-pie img {
     width: 30%;
-    padding: 1rem 0 4rem 0;
-    
+    padding: 1rem 0 0;
 }
 
 /* Nosotras */
@@ -333,7 +299,7 @@ a {
 .nosotras-container {
     display: grid;
     grid-template:
-        "header"3.1rem  "nosotras" 55rem "taller" 55rem  "feria1" 55rem  "feria2" 55rem "footer"auto;
+        "header"4.5rem  "nosotras" 55rem "taller" 55rem  "feria1" 55rem  "feria2" 15rem "footer"auto;
 }
 
 .nosotras-main {
@@ -343,20 +309,20 @@ a {
 
 .nosotras h2 {
     color: #432F61;
-    font-family: pnova-sb;
+    font-family: slthin;
     font-size: 2rem;
     text-align: center;
 }
 
 .nosotras p {
     color: #000;
-    font-family: pnova-regular;
+    font-family: slthin;
     font-size: 1.2rem;
     text-align: justify;
     padding: 0 4rem;
 }
 
-.nosotras-img img{
+.nosotras-img img {
     width: 100%;
     padding: 2rem 4rem;
 }
@@ -427,7 +393,7 @@ a {
 .contacto-container {
     display: grid;
     grid-template: 
-    "header" 3.1rem "contacto" 40rem "footer" auto;
+    "header" 4.5rem "contacto" 40rem "footer" auto;
 }
 
 .form-contact {
@@ -448,8 +414,6 @@ a {
 
 @media (min-width: 62rem) {
     
-
-
     /*header*/
 
     #header {
@@ -491,13 +455,69 @@ a {
     }
 
     /*Marketing*/
+
+    .index-container {
+        display: grid;
+        grid-template:
+            "header"4.5rem "carrusel"35rem "marketing"30rem "info" 20rem "footer"auto;   
+    }
     
     .container-marketing {
         display: flex;
+        padding-top: 5rem;
     }
     
     .item-marketing {
         width: 100%;
         height: auto;
+        
     }
+
+    /* Info */
+
+    .index-info {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 2rem;
+    }
+    
+    /* Galeria */
+
+    .galeria-main {
+        margin: 0 12rem;
+    }
+    
+    /*Productos*/
+
+
+    
+    /*Nosotras*/
+
+    .nosotras-container {
+        display: grid;
+        grid-template:
+            "header"4.5rem  "nosotras" 41rem "taller" 41rem  "feria1" 41rem  "feria2" 41rem "footer"auto;
+    }
+
+    .nosotras-main {
+        margin: 2rem 15rem;
+    }
+
+    .nosotras h2 {
+        margin-top: 2rem;
+    }
+
+    .feria1 p, .feria2 p {
+        text-align: center;
+        margin-top: .5rem;
+    }
+
+    .nosotras-img img {
+        width: 50%;
+        margin-left: 15rem ;
+    }
+
+
+
+ 
 }
