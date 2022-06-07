@@ -83,7 +83,6 @@ a {
 }
 
 .navbar-brand {
-    margin: 0;
     padding: 2px 0 0 2px;
 }
 
@@ -96,7 +95,7 @@ a {
 
 .navbar-nav {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-color: #7F38DE;
     font-family: time_burner_bold;
     font-size: 1.2rem;
@@ -139,24 +138,29 @@ a {
 .index-container {
     display: grid;
     grid-template:
-        "header"4.5rem "carrusel"12rem "marketing"70rem "info" 50rem "footer"auto;   
+        "header"4.5rem "carrusel"10rem "marketing"63rem "info" 41rem "footer"auto;   
 }
 
 /*Carrusel*/
 
 .carousel {
     grid-area: carrusel;
+    padding-top: 3.2rem;
 }
     
 .carousel-item img {
     filter: sepia(50%);
     width: 100%;
 }
-    
-    
+
+.btn-carr {
+    margin-top: 3rem;
+}
+
 .btn-car {
     background-color: #7F38DE;
 }
+
 
 .carousel-caption em {
     color: rgb(167, 167, 167);
@@ -177,6 +181,11 @@ a {
 .item-marketing {
     text-align: center;
     padding: 2rem 0 0 0;
+}
+
+.item-marketing img {
+    width: 100px;
+    height: 100px;
 }
 
 .item-marketing h2 {
@@ -200,17 +209,17 @@ a {
     color: rgb(0, 0, 0);
     text-align: center;
     border-top: 1px solid gray;
-    padding-top: 4rem;
+    padding-top: 1rem;
 }    
 
 .info-item i{
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 3rem 0;
 }
 
 .info-item p {
     font-family: time_burner_bold;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /*Productos*/
@@ -218,7 +227,7 @@ a {
 .productos-container {
     display: grid;
     grid-template:
-        "header"4.5rem "image" 6rem "texto" 14rem "main" 170rem "footer"auto;
+        "header"4.5rem "image" 6rem "texto" 14rem "main" 192rem "footer"auto;
 }
 
 .banner-image{
@@ -233,7 +242,7 @@ a {
 .banner-texto {
     grid-area: texto;
     width: 100%;
-    height: 12rem;
+    height: 16rem;
     background-color: #7F38DE;
 }
 
@@ -260,7 +269,6 @@ a {
     grid-area: main;
 }
 
-/* Productos amuletos */
 
 .productos-txt h2 {
     color: #000;
@@ -294,12 +302,62 @@ a {
     padding: 1rem 0 0;
 }
 
+/* Galería */
+
+.menu-fixed .btn {
+    background-color: #7F38DE;
+}
+
+.anillos {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.aros {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.dijes {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.amuletos {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.galeria-titulo {
+    margin-top: 5rem;
+    transition: all .5s ease-in;
+}
+
+.card {
+    border: .1px solid rgb(218, 211, 211);
+    transition: all .5s ease-in-out;
+}
+
+.card img {
+    padding: .7rem;
+    border-radius: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.card-body .btn {
+    background-color: #7F38DE;
+}
+
+.card:hover, .menu-fixed .btn:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+} 
+
 /* Nosotras */
 
 .nosotras-container {
     display: grid;
     grid-template:
-        "header"4.5rem  "nosotras" 55rem "taller" 55rem  "feria1" 55rem  "feria2" 15rem "footer"auto;
+        "header"4.5rem  "nosotras" 40rem "taller" 40rem  "feria1" 40rem  "feria2" 31rem "footer"auto;
 }
 
 .nosotras-main {
@@ -339,61 +397,12 @@ a {
     grid-area: feria2;
 }
 
-/* Galería */
-
-.menu-fixed .btn {
-    background-color: #7F38DE;
-}
-
-.anillos {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.aros {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.dijes {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.amuletos {
-    margin-top: 3rem;
-    margin-bottom: 10rem;
-}
-.galeria-titulo {
-    margin-top: 5rem;
-}
-
-.card {
-    border: .1px solid rgb(218, 211, 211);
-    transition: all .5s ease-in-out;
-}
-
-.card img {
-    padding: .7rem;
-    border-radius: 1rem;
-    transition: all .5s ease-in-out;
-}
-
-.card-body .btn {
-    background-color: #7F38DE;
-}
-
-.card:hover, .menu-fixed .btn:hover {
-    transform: scale(1.05);
-    border: 1px solid black;
-} 
-
 /* Contacto */
 
 .contacto-container {
     display: grid;
     grid-template: 
-    "header" 4.5rem "contacto" 40rem "footer" auto;
+    "header" 4.5rem "contacto" 38rem "footer" auto;
 }
 
 .form-contact {
@@ -454,26 +463,42 @@ a {
         padding-left: .2rem;
     }
 
-    /*Marketing*/
+    /*Index*/
 
     .index-container {
         display: grid;
         grid-template:
             "header"4.5rem "carrusel"35rem "marketing"30rem "info" 20rem "footer"auto;   
     }
+
+    /*Carrusel*/
+
+    .carousel {
+        padding-top: 0;
+    }
+    .btn-carr {
+        margin-top: 0;
+    }
+
+    /*Marketing*/
+
+
     
     .container-marketing {
         display: flex;
-        padding-top: 5rem;
+        padding-top: 5.3rem;
     }
     
     .item-marketing {
         width: 100%;
-        height: auto;
-        
     }
 
-    /* Info */
+    .item-marketing img {
+        width: 140px;
+        height: 140px;
+    }
+
+    /*Info */
 
     .index-info {
         display: flex;
@@ -481,22 +506,36 @@ a {
         padding-top: 2rem;
     }
     
+    /*Productos*/
+
+    .productos-container {
+    display: grid;
+    grid-template:
+        "header"4.5rem "image" 21rem "texto" 14rem "main" 173rem "footer"auto;
+    }   
+
+    .banner-texto {
+        height: 12rem;
+    }
+
+    /*Productos Main */
+
+    .productos-main {
+       margin: 0 16rem;
+    }
+
     /* Galeria */
 
     .galeria-main {
         margin: 0 12rem;
     }
-    
-    /*Productos*/
 
-
-    
     /*Nosotras*/
 
     .nosotras-container {
         display: grid;
         grid-template:
-            "header"4.5rem  "nosotras" 41rem "taller" 41rem  "feria1" 41rem  "feria2" 41rem "footer"auto;
+            "header"4.5rem  "nosotras" 41rem "taller" 41rem  "feria1" 41rem  "feria2" 38rem "footer"auto;
     }
 
     .nosotras-main {
