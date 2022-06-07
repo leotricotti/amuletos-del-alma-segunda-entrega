@@ -38,8 +38,6 @@ a {
     text-decoration: none;
 }
 
-/* Header */
-
 #header {
     grid-area: header;
     background-color: rgba(232, 217, 250);
@@ -117,8 +115,6 @@ a {
     color: #000;
 }
 
-/*Footer*/
-
 #footer {
     grid-area: footer;
     border-top: 1px solid gray;
@@ -133,15 +129,11 @@ a {
     color: rgb(65, 65, 65);
 }
 
-/* Index */
-
 .index-container {
     display: grid;
     grid-template:
-        "header"4.5rem "carrusel"10rem "marketing"63rem "info" 41rem "footer"auto;   
+        "header"4.5rem "carrusel"10rem "marketing"70rem "info" 41rem "footer"auto;   
 }
-
-/*Carrusel*/
 
 .carousel {
     grid-area: carrusel;
@@ -161,7 +153,6 @@ a {
     background-color: #7F38DE;
 }
 
-
 .carousel-caption em {
     color: rgb(167, 167, 167);
 }
@@ -172,15 +163,13 @@ a {
     text-align: center;
 }   
 
-/*Marketing*/
-
 .container-marketing {
     grid-area: marketing;
 }
 
 .item-marketing {
     text-align: center;
-    padding: 2rem 0 0 0;
+    padding: 1rem 0 4rem 0;
 }
 
 .item-marketing img {
@@ -202,8 +191,6 @@ a {
     background-color: #7F38DE;
 }
 
-/*Info area*/
-
 .index-info {
     grid-area: info;
     color: rgb(0, 0, 0);
@@ -222,12 +209,10 @@ a {
     font-size: 1.1rem;
 }
 
-/*Productos*/
-
 .productos-container {
     display: grid;
     grid-template:
-        "header"4.5rem "image" 6rem "texto" 14rem "main" 192rem "footer"auto;
+        "header"4.5rem "image" 6rem "texto" 14rem "main" 185rem "footer"auto;
 }
 
 .banner-image{
@@ -246,7 +231,6 @@ a {
     background-color: #7F38DE;
 }
 
-
 .banner-texto h1 {
     color: #e8d9fa;
     font-family: pnova-regular;
@@ -263,12 +247,9 @@ a {
     padding: 0 4rem;
 }
 
-/* Productos Main */
-
 .productos-main {
     grid-area: main;
 }
-
 
 .productos-txt h2 {
     color: #000;
@@ -301,8 +282,6 @@ a {
     width: 30%;
     padding: 1rem 0 0;
 }
-
-/* Galería */
 
 .menu-fixed .btn {
     background-color: #7F38DE;
@@ -352,12 +331,10 @@ a {
     border: 1px solid black;
 } 
 
-/* Nosotras */
-
 .nosotras-container {
     display: grid;
     grid-template:
-        "header"4.5rem  "nosotras" 40rem "taller" 40rem  "feria1" 40rem  "feria2" 31rem "footer"auto;
+        "header"4.5rem  "nosotras" 40rem "taller" 40rem  "feria1" 40rem  "feria2" 35rem "footer"auto;
 }
 
 .nosotras-main {
@@ -397,8 +374,6 @@ a {
     grid-area: feria2;
 }
 
-/* Contacto */
-
 .contacto-container {
     display: grid;
     grid-template: 
@@ -423,8 +398,6 @@ a {
 
 @media (min-width: 62rem) {
     
-    /*header*/
-
     #header {
         height: 4.5rem;
         z-index: 2;
@@ -463,34 +436,28 @@ a {
         padding-left: .2rem;
     }
 
-    /*Index*/
-
     .index-container {
         display: grid;
         grid-template:
-            "header"4.5rem "carrusel"35rem "marketing"30rem "info" 20rem "footer"auto;   
+            "header"4.5rem "carrusel"35rem "marketing"25rem "info" 24rem "footer"auto;   
     }
-
-    /*Carrusel*/
 
     .carousel {
         padding-top: 0;
     }
+    
     .btn-carr {
         margin-top: 0;
     }
 
-    /*Marketing*/
-
-
-    
     .container-marketing {
         display: flex;
-        padding-top: 5.3rem;
+       
     }
     
     .item-marketing {
         width: 100%;
+        padding: 4rem 0;
     }
 
     .item-marketing img {
@@ -498,44 +465,33 @@ a {
         height: 140px;
     }
 
-    /*Info */
-
     .index-info {
         display: flex;
         justify-content: space-evenly;
-        padding-top: 2rem;
     }
     
-    /*Productos*/
-
     .productos-container {
     display: grid;
     grid-template:
-        "header"4.5rem "image" 21rem "texto" 14rem "main" 173rem "footer"auto;
+        "header"4.5rem "image" 21rem "texto" 17rem "main" 173rem "footer"auto;
     }   
 
     .banner-texto {
-        height: 12rem;
+        height: 16rem;
     }
-
-    /*Productos Main */
 
     .productos-main {
        margin: 0 16rem;
     }
 
-    /* Galeria */
-
     .galeria-main {
         margin: 0 12rem;
     }
 
-    /*Nosotras*/
-
     .nosotras-container {
         display: grid;
         grid-template:
-            "header"4.5rem  "nosotras" 41rem "taller" 41rem  "feria1" 41rem  "feria2" 38rem "footer"auto;
+            "header"4.5rem  "nosotras" 41rem "taller" 41rem  "feria1" 41rem  "feria2" 25rem "footer"auto;
     }
 
     .nosotras-main {
@@ -555,8 +511,5 @@ a {
         width: 50%;
         margin-left: 15rem ;
     }
-
-
-
  
 }
